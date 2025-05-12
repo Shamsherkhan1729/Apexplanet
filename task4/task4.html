@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All-in-One Web App</title>
+  <link rel="stylesheet" href="task4.css" />
+  <script defer src="task4.js"></script>
+</head>
+<body>
+   <h1 style="text-align:center;">Portfolio</h1>
+  <nav>
+    <ul>
+      <li><a href="#" onclick="showSection('about')"><i class="fas fa-user"></i> About me</a></li>
+      <li><a href="#" onclick="showSection('projects')"><i class="fas fa-code"></i> My Projects</a></li>
+      <li><a href="#" onclick="showSection('contact')"><i class="fas fa-envelope"></i> Contact me</a></li>
+    </ul>
+  </nav>
+  <section id="about" class="visible fade-section">
+    <h2>About Me</h2>
+    <img src="./profile.jpeg" alt="Profile Image">
+    <p>Welcome to my portfolio! I’m a passionate web developer with experience in building modern, responsive, and user-friendly websites using HTML, CSS, and JavaScript. Below are some of the projects I’ve worked on, each showcasing different aspects of my skills and creativity.</p>
+    <ul style="display:flexbox">
+      <li><strong>Name:</strong> shamsher khan</li>
+      <li><strong>Profession:</strong> Full stack Developer</li>
+      <li><strong>Skills:</strong> HTML, CSS, JavaScript, React, Node.js</li>
+      <li><strong>Hobbies:</strong> story writing,watching movies.</li>
+    </ul>
+  </section>
+  <section id="projects" class="hidden fade-section">
+    <h2>My Projects</h2>
+    <div class="card">
+      <h3>📃To-Do List📃</h3>
+      <input type="text" id="todo-input" placeholder="Add a task..." />
+      <button onclick="addTask()">Add</button>
+      <ul id="todo-list"></ul>
+    </div>
+    <div class="card">
+      <h3>🛒Online shopping🛒</h3>
+      <div class="filters">
+        <select id="category-filter" onchange="applyFilters()">
+          <option value="all">All</option>
+          <option value="books">Books</option>
+          <option value="crockery">Crockery</option>
+          <option value="electronics">Electronics</option>
+          <option value="food">Food</option>
+          <option value="furniture">Furniture</option>
+        </select>
+          <select id="sort-filter" onchange="applyFilters()">
+          <option value="default">Sort by</option>
+          <option value="price-asc">Price Low to High</option>
+          <option value="price-desc">Price High to Low</option>
+        </select>
+      </div>
+      <div id="product-list"></div>
+    </div>
+  </section>
+  <section id="contact" class="hidden fade-section">
+    <h2>Contact Me</h2>
+    <ul>
+      <li><strong>Email:</strong> shamsher.1729@gmail.com</li>
+      <li><strong>Phone:</strong> +91-9502697498</li>
+      <li><strong>Location:</strong> India</li>
+    </ul>
+    <form>
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+  <button class="bounce">Bounce</button>
+<div class="spin">🔄</div>
+<h4 class="typing">Typing Effect</h4>
 
+</body>
+</html>
