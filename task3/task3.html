@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive Quiz & Carousel</title>
+  <link rel="stylesheet" href="task3.css">
+</head>
+<body>
+
+  <h1>🧠Interactive Quiz🧠</h1>
+  <div class="quiz-container" id="quiz">
+    <div id="question">Question text</div>
+    <div id="answers"></div>
+    <button id="nextBtn">Next</button>
+  </div>
+
+  <h1>🐎Image Carousel🐎</h1>
+  <div class="carousel">
+    <img id="carouselImage" src="https://via.placeholder.com/400x200?text=1" alt="Carousel">
+    <div class="carousel-buttons">
+      <button onclick="prevImage()">&#10094;</button>
+      <button onclick="nextImage()">&#10095;</button>
+    </div>
+  </div>
+
+  <h1>😂Joke of the Moment😂</h1>
+  <div class="joke-container">
+    <button onclick="fetchJoke()">Get a Joke</button>
+    <p id="jokeText">Click the button to get a joke!</p>
+  </div>
+
+  <script src="task3.js"></script>
+</body>
+</html>
 
